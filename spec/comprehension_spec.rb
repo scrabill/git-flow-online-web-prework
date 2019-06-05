@@ -207,14 +207,14 @@ describe "GIT" do
 # describe "DELETING BRANCHES:" do
   it "27. From master, what is the syntax for deleting a local branch called
       'add-link'?" do
-    answer = "?"
+    answer = "git branch -D add-link"
     encoded_answer = "6f91ced397c25c02c099b56d71e11955ea660fa0"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "28. What is the syntax for deleting a branch called 'add-avatar'
       on the remote 'origin' using the push and colon syntax?" do
-    answer = "?"
+    answer = "git push origin :add-avatar"
     encoded_answer = "7f9e982d2fe3ddabf95d835881a7efd6da387542"
     expect(encode(answer)).to eq(encoded_answer)
   end
